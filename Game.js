@@ -56,11 +56,15 @@ export default class home extends Component {
 
     let winner = this.getWinner()
     if (winner === 1) {
-      setTimeout(()=>{Alert.alert('Player 1 is a winner')}, 500)
+      setTimeout(() => {
+        Alert.alert('Player 1 is a winner')
+      }, 500)
 
       this.initializeGame()
     } else if (winner === -1) {
-      setTimeout(()=>{Alert.alert('Player 2 is a winner')}, 500)
+      setTimeout(() => {
+        Alert.alert('Player 2 is a winner')
+      }, 500)
       this.initializeGame()
     }
   }
